@@ -1,23 +1,21 @@
-# device details
-
-import csv
-import pprint
 import shared
+import os
+import pprint
 
-saved = {}
 
 def code_upgrade():
-
-
     csv_file = input('local CSV name :')
     image_file = input('Source image name :')
 
     print('proceed with copying code to devices [Y/n}')
     resp = input()
 
+    print('initiating file transfer to devices')
     upload_result = shared.start_upload(csv_file, image_file)
 
-    print(upload_result)
+    print('file upload results')
+
+    pprint.pprint(upload_result)
 
 
 if __name__ == "__main__":

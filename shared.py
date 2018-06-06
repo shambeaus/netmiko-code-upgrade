@@ -30,7 +30,6 @@ def start_upload(csv_file, image_file):
         devicedict = csv.DictReader(devices)
 
         for row in devicedict:
-            print(row)
             thread = threading.Thread(target=code_upload, args=(row, image_file, output_q))
             thread.start()
 

@@ -5,9 +5,6 @@ import os
 from netmiko import ConnectHandler, file_transfer
 import csv
 
-
-
-
 def code_upload(devicedict, image_file, output_q):
     output_dict = {}
     hostname = devicedict['host']

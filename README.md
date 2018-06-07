@@ -22,7 +22,7 @@ pipenv shell
 
 - create CSV file with device information in /CSV folder (example 'devices.csv')
 - add network device code images to /images folder
-- launch run.py interactive prompt to execute upgrade
+- launch run.py interactive prompt to execute copy
 - script will scp files to network devices, add boot variable and wr mem
 
 ## Network Device requirements
@@ -51,6 +51,7 @@ ssh version 2
 ## TODO:
 
 - Clean results ouput
+- add option to send reboot command to devices to boot into new code
 - Test and add required commands for devices other than ASA
 - ...
 

@@ -1,0 +1,3 @@
+host,device_type,username,password,file_system
+192.168.1.221,cisco_asa,cisco,fish,disk0:
+192.168.1.222,cisco_asa,cisco,fish,disk0:
